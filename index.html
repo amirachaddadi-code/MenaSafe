@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HajjSafe — CAMARA Gateway Telemetry & Operations Command</title>
 
-    <!-- Tailwind CSS with Custom Dark Brown / Gold Theme -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -49,15 +49,15 @@
         }
     </script>
 
-    <!-- Google Fonts -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome Icons -->
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-    <!-- QRCode JS Library -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <style>
@@ -105,11 +105,11 @@
 </head>
 <body class="min-h-screen flex flex-col bg-brown-950 text-beige-100 antialiased selection:bg-gold-500 selection:text-brown-950">
 
-    <!-- TOP HEADER BAR -->
+    
     <header class="bg-brown-900 border-b border-brown-700 sticky top-0 z-50 px-4 py-3 shadow-xl">
         <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
             
-            <!-- BRANDING & LOGO -->
+          
             <div class="flex items-center space-x-3">
                 <div class="w-10 h-10 rounded-xl bg-brown-850 border border-gold-500/30 flex items-center justify-center text-gold-400 shadow-inner">
                     <i class="fa-solid fa-kaaba text-xl"></i>
@@ -123,7 +123,7 @@
                 </div>
             </div>
 
-            <!-- VIEW NAVIGATION TOGGLE -->
+            
             <div class="bg-brown-950 p-1 rounded-xl border border-brown-700 flex items-center space-x-1 w-full lg:w-auto">
                 <button id="nav-btn-pilgrim" onclick="switchView('pilgrim')" class="flex-1 lg:flex-initial px-4 py-2 rounded-lg text-xs font-bold transition flex items-center justify-center space-x-2 bg-gradient-to-r from-gold-500 to-gold-600 text-brown-950 shadow-md">
                     <i class="fa-solid fa-mobile-screen-button"></i>
@@ -137,7 +137,7 @@
                 </button>
             </div>
 
-            <!-- SIMULATION CONTROL BUTTONS -->
+            
             <div class="flex items-center gap-2 flex-wrap w-full lg:w-auto justify-end">
                 <button onclick="simulateScenario('signal_loss')" class="px-2.5 py-1.5 rounded-lg bg-brown-850 hover:bg-brown-800 border border-brown-700 text-beige-200 text-[11px] font-semibold transition flex items-center space-x-1.5">
                     <i class="fa-solid fa-wifi text-status-orange"></i>
@@ -162,10 +162,10 @@
         </div>
     </header>
 
-    <!-- VIEW 1: PILGRIM / GUARDIAN OPT-IN REGISTRATION & LIVE STATUS -->
+    
     <main id="view-pilgrim" class="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-        <!-- REGISTRATION FORM CARD (7 COLS) -->
+        
         <section class="lg:col-span-7 space-y-5">
             <div class="bg-brown-850 border border-brown-700 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
                 <div class="absolute -right-20 -top-20 w-56 h-56 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -182,7 +182,7 @@
 
                 <form id="pilgrim-form" onsubmit="handlePilgrimRegistration(event)" class="space-y-4">
                     
-                    <!-- Full Name & Phone Number -->
+                    
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-semibold text-beige-300 uppercase tracking-wider mb-1.5">
@@ -200,7 +200,7 @@
                         </div>
                     </div>
 
-                    <!-- Role & Organization -->
+                    
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-xs font-semibold text-beige-300 uppercase tracking-wider mb-1.5">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
 
-                    <!-- Emergency Guardian Contact Info -->
+                    
                     <div>
                         <label class="block text-xs font-semibold text-beige-300 uppercase tracking-wider mb-1.5">
                             Guardian / Emergency Contact Name & Phone <span class="text-gold-400">*</span>
@@ -237,7 +237,7 @@
                             class="w-full bg-brown-950 border border-brown-700 rounded-xl px-3.5 py-2.5 text-xs text-beige-100 placeholder-brown-600 focus:outline-none focus:border-gold-500 focus:ring-1 focus:ring-gold-500 transition">
                     </div>
 
-                    <!-- CAMARA Consent Opt-In Box -->
+                    
                     <div class="p-4 rounded-xl bg-brown-950 border border-gold-500/30 space-y-3">
                         <div class="flex items-center justify-between border-b border-brown-800 pb-2">
                             <span class="text-xs font-bold text-gold-400 uppercase tracking-wider flex items-center space-x-1.5">
@@ -273,10 +273,10 @@
             </div>
         </section>
 
-        <!-- DIGITAL PASS & SOS CARD (5 COLS) -->
+        
         <section class="lg:col-span-5 space-y-5 flex flex-col">
             
-            <!-- DIGITAL SAFETY PASS -->
+            
             <div class="bg-gradient-to-br from-brown-850 via-brown-800 to-brown-850 border border-gold-500/30 rounded-2xl p-5 shadow-2xl relative overflow-hidden gold-glow">
                 <div class="flex items-center justify-between border-b border-brown-700 pb-3 mb-4">
                     <div class="flex items-center space-x-2">
@@ -289,12 +289,12 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4">
-                    <!-- QR Code Canvas Container -->
+                    
                     <div class="bg-white p-2.5 rounded-xl shadow-lg border border-beige-300 shrink-0" id="qrcode-box">
                         <div id="qrcode"></div>
                     </div>
 
-                    <!-- Member Details Summary -->
+                    
                     <div class="space-y-1.5 text-xs text-center sm:text-left flex-1 w-full">
                         <h3 class="font-extrabold text-base text-beige-100" id="pass-name">Dr. Yousef Al-Mansoor</h3>
                         <p class="text-gold-400 code-font text-xs" id="pass-phone">+966 50 000 0008</p>
@@ -307,7 +307,7 @@
                     </div>
                 </div>
 
-                <!-- Live CAMARA Telemetry Card -->
+               
                 <div class="mt-4 p-3 rounded-xl bg-brown-950 border border-brown-700 space-y-2 text-xs">
                     <div class="flex justify-between items-center border-b border-brown-800 pb-1.5">
                         <span class="text-[11px] font-bold text-beige-300 uppercase tracking-wider">Live CAMARA Network Health</span>
@@ -330,7 +330,7 @@
                     </div>
                 </div>
 
-                <!-- SOS Emergency Button -->
+                
                 <div class="mt-4">
                     <button onclick="triggerEmergencySOS()" class="w-full py-3 bg-gradient-to-r from-status-red to-red-700 hover:from-red-600 hover:to-red-800 text-white font-extrabold rounded-xl text-xs uppercase tracking-wider transition shadow-lg shadow-status-red/20 flex items-center justify-center space-x-2">
                         <i class="fa-solid fa-triangle-exclamation text-sm animate-bounce"></i>
@@ -339,7 +339,7 @@
                 </div>
             </div>
 
-            <!-- SYSTEM EXPLANATION CARD -->
+            
             <div class="flex-1 bg-brown-850 border border-brown-700 rounded-2xl p-5 shadow-xl flex flex-col justify-between">
                 <div>
                     <h3 class="text-xs font-bold text-beige-200 uppercase tracking-wider mb-2 flex items-center space-x-2">
@@ -374,12 +374,12 @@
 
     </main>
 
-    <!-- VIEW 2: LEADER & LOCAL AUTHORITY COMMAND CENTER (HIDDEN BY DEFAULT) -->
+    
     <main id="view-command" class="hidden flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 space-y-6">
 
-        <!-- TOP METRICS BANNER (4 CARDS) -->
+        
         <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Total Pilgrims -->
+            
             <div class="bg-brown-850 border border-brown-700 rounded-2xl p-4 shadow-xl">
                 <div class="flex justify-between items-center text-xs font-semibold text-beige-400 uppercase">
                     <span>Monitored Pilgrims</span>
@@ -392,7 +392,7 @@
                 </p>
             </div>
 
-            <!-- Normal Status -->
+           
             <div class="bg-brown-850 border border-brown-700 rounded-2xl p-4 shadow-xl">
                 <div class="flex justify-between items-center text-xs font-semibold text-beige-400 uppercase">
                     <span>Reachable / Normal</span>
@@ -402,7 +402,7 @@
                 <p class="text-[10px] text-beige-400 mt-1">Normal Telemetry Status</p>
             </div>
 
-            <!-- Signal Loss / Warnings -->
+           
             <div class="bg-brown-850 border border-brown-700 rounded-2xl p-4 shadow-xl">
                 <div class="flex justify-between items-center text-xs font-semibold text-beige-400 uppercase">
                     <span>Signal Loss Alerts</span>
@@ -412,7 +412,7 @@
                 <p class="text-[10px] text-beige-400 mt-1">Tier 1 Leader Review</p>
             </div>
 
-            <!-- Danger / Anomaly Crushes -->
+            
             <div class="bg-brown-850 border border-brown-700 rounded-2xl p-4 shadow-xl">
                 <div class="flex justify-between items-center text-xs font-semibold text-beige-400 uppercase">
                     <span>Critical Anomalies</span>
@@ -423,13 +423,13 @@
             </div>
         </section>
 
-        <!-- MAIN DASHBOARD CONTENT (TACTICAL MAP + AI RISK ENGINE + LOGS) -->
+        
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-            <!-- LEFT 7 COLS: TACTICAL RADAR MAP & CLICKABLE MARKERS -->
+            
             <div class="lg:col-span-7 space-y-6 flex flex-col">
                 
-                <!-- TACTICAL RADAR CANVAS -->
+                
                 <div class="bg-brown-850 border border-brown-700 rounded-2xl p-5 shadow-2xl relative flex flex-col overflow-hidden">
                     <div class="flex justify-between items-center border-b border-brown-700 pb-3 mb-4">
                         <div>
@@ -445,28 +445,28 @@
                         </span>
                     </div>
 
-                    <!-- Simulated Radar Map Canvas Container -->
+                    
                     <div class="relative w-full h-[360px] bg-brown-950 rounded-xl border border-brown-700 overflow-hidden flex items-center justify-center" id="radar-container">
                         
-                        <!-- Radar Sweep Background Grid -->
+                    
                         <div class="absolute inset-0 bg-[radial-gradient(#3d2b24_1px,transparent_1px)] [background-size:16px_16px] opacity-40"></div>
                         
-                        <!-- Concentric Distance Circles -->
+                       
                         <div class="absolute w-72 h-72 rounded-full border border-brown-700/60 pointer-events-none"></div>
                         <div class="absolute w-52 h-52 rounded-full border border-brown-700/40 pointer-events-none"></div>
                         <div class="absolute w-32 h-32 rounded-full border border-brown-700/20 pointer-events-none"></div>
 
-                        <!-- Geofence Danger Area Boundary -->
+                        
                         <div class="absolute right-6 top-8 w-44 h-40 rounded-2xl border-2 border-dashed border-status-red/50 bg-status-red/5 pointer-events-none flex items-start justify-end p-2">
                             <span class="text-[9px] font-bold text-status-red uppercase code-font bg-brown-950/80 px-1.5 py-0.5 rounded border border-status-red/30">
                                 Jamarat Chokepoint Danger Zone
                             </span>
                         </div>
 
-                        <!-- Animated Radar Sweep Scanner -->
+                        
                         <div class="absolute w-[400px] h-[400px] rounded-full radar-sweep pointer-events-none opacity-20 bg-conic-gradient from-gold-500/40 via-transparent to-transparent" style="background: conic-gradient(from 0deg, rgba(185,154,114,0.3) 0deg, transparent 60deg, transparent 360deg);"></div>
 
-                        <!-- Dynamic Pilgrim Map Markers Rendered Here -->
+                        
                         <div id="radar-markers-layer" class="absolute inset-0 pointer-events-auto"></div>
 
                     </div>
@@ -490,7 +490,7 @@
                     </div>
                 </div>
 
-                <!-- LIVE CAMARA API & AI ANOMALY AUDIT LOG STREAM -->
+                
                 <div class="bg-brown-850 border border-brown-700 rounded-2xl p-5 shadow-xl flex-1 flex flex-col">
                     <div class="flex justify-between items-center border-b border-brown-700 pb-3 mb-3">
                         <h3 class="text-xs font-bold text-beige-100 uppercase tracking-wider flex items-center space-x-2">
@@ -503,16 +503,16 @@
                     </div>
 
                     <div id="audit-log-stream" class="space-y-1.5 max-h-[160px] overflow-y-auto code-font text-[11px] pr-1">
-                        <!-- Dynamic log items -->
+                        
                     </div>
                 </div>
 
             </div>
 
-            <!-- RIGHT 5 COLS: REAL-TIME NOTIFICATIONS & AI RISK ENGINE -->
+          
             <div class="lg:col-span-5 space-y-6 flex flex-col">
                 
-                <!-- AI RISK ENGINE & ESCALATION CONTROL PANEL -->
+                
                 <div class="bg-brown-850 border border-brown-700 rounded-2xl p-5 shadow-xl space-y-4">
                     <div class="flex justify-between items-center border-b border-brown-700 pb-3">
                         <h3 class="text-xs font-bold text-beige-100 uppercase tracking-wider flex items-center space-x-2">
@@ -524,7 +524,7 @@
                         </span>
                     </div>
 
-                    <!-- AI Confidence Meter -->
+                    
                     <div class="space-y-1.5">
                         <div class="flex justify-between text-xs">
                             <span class="text-beige-300 font-semibold">AI Anomaly Confidence Meter</span>
@@ -535,7 +535,7 @@
                         </div>
                     </div>
 
-                    <!-- Escalation Rules & Active Tier -->
+                    
                     <div class="p-3.5 rounded-xl bg-brown-950 border border-brown-700 space-y-2 text-xs">
                         <span class="text-[11px] font-bold text-beige-300 uppercase tracking-wider block">Multi-Tier Escalation Protocol</span>
                         
@@ -565,7 +565,7 @@
                     </div>
                 </div>
 
-                <!-- REAL-TIME INCOMING NOTIFICATION STREAM -->
+                
                 <div class="bg-brown-850 border border-brown-700 rounded-2xl p-5 shadow-xl flex-1 flex flex-col">
                     <div class="flex justify-between items-center border-b border-brown-700 pb-3 mb-3">
                         <h3 class="text-xs font-bold text-beige-100 uppercase tracking-wider flex items-center space-x-2">
@@ -576,7 +576,7 @@
                     </div>
 
                     <div id="incoming-notifications-feed" class="space-y-2.5 max-h-[220px] overflow-y-auto pr-1">
-                        <!-- Dynamic notification items -->
+                        
                     </div>
                 </div>
 
@@ -586,10 +586,10 @@
 
     </main>
 
-    <!-- FLOATING TOAST CONTAINER FOR REAL-TIME ALERTS -->
+
     <div id="toast-container" class="fixed bottom-5 right-5 z-50 space-y-2.5 pointer-events-none max-w-sm w-full"></div>
 
-    <!-- INSPECT / DISPATCH MODAL -->
+  
     <div id="modal-dispatch" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-brown-950/80 backdrop-blur-sm">
         <div class="max-w-md w-full bg-brown-850 border border-gold-500/30 rounded-2xl p-6 shadow-2xl relative">
             <div class="flex justify-between items-start border-b border-brown-700 pb-3 mb-4">
@@ -629,16 +629,14 @@
     </div>
 
     <script>
-        // ===================================================
-        // 1. GLOBAL STATE & SEED DATA
-        // ===================================================
+        
         const STORAGE_KEY = 'hajjsafe_pilgrims_state';
         const LOGS_KEY = 'hajjsafe_audit_logs';
 
         let qrCodeInstance = null;
         let selectedPilgrimModal = null;
 
-        // Default initial pilgrims with coordinate offsets for tactical radar map
+        
         const defaultPilgrims = [
             {
                 id: 'P-1001',
@@ -648,7 +646,7 @@
                 org: 'Al-Ansar Hajj Group #402',
                 guardian: 'Mariam Al-Mansoor (+966551122334)',
                 zone: 'Mina Sector 3B',
-                status: 'REACHABLE', // REACHABLE, SIGNAL_LOSS, DANGER_GEOfENCE, CRITICAL_CRUSH
+                status: 'REACHABLE', 
                 battery: '94%',
                 signal: '98% (5G)',
                 aiRiskScore: 12,
@@ -728,9 +726,7 @@
             localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
         }
 
-        // ===================================================
-        // 2. VIEW SWITCHER
-        // ===================================================
+       
         function switchView(view) {
             const pilgrimView = document.getElementById('view-pilgrim');
             const commandView = document.getElementById('view-command');
@@ -754,9 +750,7 @@
             }
         }
 
-        // ===================================================
-        // 3. PILGRIM FORM REGISTRATION & QR PASS
-        // ===================================================
+       
         function initQRCode(text) {
             const qrElem = document.getElementById("qrcode");
             qrElem.innerHTML = "";
@@ -839,9 +833,7 @@
             }
         }
 
-        // ===================================================
-        // 4. COMMAND OPERATIONS CENTER & AI RISK ENGINE
-        // ===================================================
+        
         function renderCommandDashboard() {
             const list = getPilgrims();
 
@@ -856,12 +848,12 @@
             document.getElementById('metric-warning-count').innerText = warnings;
             document.getElementById('metric-critical-count').innerText = criticals;
 
-            // Global Unread Badge
+          
             const badge = document.getElementById('unread-alert-badge');
             const alertCount = warnings + criticals;
             badge.innerText = alertCount;
-
-            // 2. AI Risk Engine Confidence Meter Computation
+ 
+           
             let highestRisk = 10;
             list.forEach(p => {
                 if (p.aiRiskScore > highestRisk) highestRisk = p.aiRiskScore;
@@ -882,13 +874,12 @@
                 valText.className = 'code-font text-status-red font-bold animate-pulse';
             }
 
-            // Update Escalation Tier Highlights
+            
             updateEscalationTierBoxes(highestRisk, list);
 
-            // 3. Render Tactical Radar Markers
+           
             renderRadarMarkers(list);
 
-            // 4. Render Notifications Stream
             renderNotificationsStream(list);
         }
 
@@ -1010,9 +1001,6 @@
             });
         }
 
-        // ===================================================
-        // 5. SCENARIO SIMULATION ENGINE
-        // ===================================================
         function simulateScenario(type) {
             const list = getPilgrims();
             if (list.length === 0) return;
@@ -1065,9 +1053,7 @@
             renderCommandDashboard();
         }
 
-        // ===================================================
-        // 6. INSPECTION & DISPATCH MODAL
-        // ===================================================
+        
         function openDispatchModal(pilgrim) {
             selectedPilgrimModal = pilgrim;
             document.getElementById('modal-pilgrim-name').innerText = pilgrim.name;
@@ -1112,9 +1098,7 @@
             closeDispatchModal();
         }
 
-        // ===================================================
-        // 7. AUDIT LOGGING & TOAST RENDERER
-        // ===================================================
+        
         function addAuditLog(category, details) {
             const logsContainer = document.getElementById('audit-log-stream');
             const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
